@@ -1,5 +1,6 @@
 import math
 import pickle
+import sklearn
 import streamlit as st
  
 # loading the trained model
