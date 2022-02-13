@@ -1,5 +1,5 @@
 # Used Guitar Appraiser App using ML
-### Data Engineering MVP 
+### METIS Data Engineering Project
 ----------------------
 submitted by Mike Bernardo
 
