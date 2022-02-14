@@ -68,7 +68,7 @@ def main():
    
 
 
-    price_dict = {1: "Not Sure.",
+    price_dict = {2: "Not Sure.",
                   2: "less than 500",
                   3: "less than 1000",
                   4: "less than 1500",
@@ -76,7 +76,7 @@ def main():
     
     price_range = st.selectbox(
         label="How much was it originally:",
-        options= (5, 4, 3, 2, 1), 
+        options= (5, 4, 3, 2, 2), 
         format_func=lambda x: price_dict.get(x),
         )       
     
