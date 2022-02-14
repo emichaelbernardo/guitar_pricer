@@ -56,11 +56,12 @@ deploy the model.<br>
     </tr>
 </table>
     
-  
+[Click here to view the live app.](https://share.streamlit.io/emichaelbernardo/guitar_pricer/main/guitar_2.py) 
+
 ---------------------
 ## Further Work
 ---------------------
-
+- Tuning of prediction model
 - Additional input boxes will be added to allow the user to select brand, year and origin.
 - Implementation of updates to grab recent listings and update the model for prediction
 - Improved formatting and styling of the web app
