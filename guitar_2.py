@@ -2,11 +2,26 @@ import math
 import pickle
 import sklearn
 import streamlit as st
-import boto3
 import boto3.session
+import logging
+import boto3
+from botocore.exceptions import ClientError
+import os
+
 from PIL import Image
 import configparser
- 
+
+#st.write("aws_access:", st.secrets["aws_access"])
+#st.write("aws_secret:", st.secrets["aws_secret"])
+
+
+import os
+st.write(
+"Has environment variables been set:",
+os.environ["aws_access"] == st.secrets["aws_access"],
+os.environ["aws_secret"] == st.secrets["aws_secret"])
+
+
 # loading the trained model from local drive
 #with open('models/guitar.pkl', 'rb') as f:
 #    model = pickle.load(f)
@@ -32,15 +47,15 @@ import configparser
 #body = response['Body'].read()
 #model = pickle.loads(body)    
 
-st.write("aws_access_key_id =", st.secrets["aws_access_key_id"])
-st.write("aws_secret_access_key =", st.secrets["aws_secret_access_key"])
+
 
 ## using secrets from streamlit
 # Creating the low level functional client
 client = boto3.client(
-     aws_access_key_id = aws_access_key_id,
-     aws_secret_access_key =  aws_secret_access_key,
-    region_name = 'us-east-1' )
+     's3',
+     aws_access_key_id = st.secrets["aws_access"],
+     aws_secret_access_key =  st.secrets["aws_secret"],
+     region_name = 'us-east-1' )
 
 response = client.get_object(Bucket='dataforguitarapp', Key='guitar.pkl')
 body = response['Body'].read()
