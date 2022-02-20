@@ -8,7 +8,7 @@ import boto3
 from botocore.exceptions import ClientError
 import os
 
-from PIL import Image
+#from PIL import Image
 import configparser
 
 #st.write("aws_access:", st.secrets["aws_access"])
