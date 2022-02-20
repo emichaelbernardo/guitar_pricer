@@ -175,15 +175,15 @@ def main():
         format_func=lambda x: conditions.get(x),
         )   
 
-    price_dict = {#2: "Not Sure.",
-                  2: "less than 500",
-                  3: "less than 1000",
-                  4: "less than 1500",
-                  5: "less than 2500" }
+    price_dict = {1: "Not Sure.",
+                  5: "less than 500",
+                  4: "less than 1000",
+                  3: "less than 1500",
+                  2: "less than 2500" }
     
     price_code = st.selectbox(
         label="How much was it originally:",
-        options= (5, 4, 3, 2), 
+        options= (5, 4, 3, 2,1), 
         format_func=lambda x: price_dict.get(x),
         )       
     
