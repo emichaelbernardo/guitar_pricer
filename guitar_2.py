@@ -11,8 +11,8 @@ import os
 from PIL import Image
 import configparser
 
-st.write("aws_access:", st.secrets["aws_access"])
-st.write("aws_secret:", st.secrets["aws_secret"])
+#st.write("aws_access:", st.secrets["aws_access"])
+#st.write("aws_secret:", st.secrets["aws_secret"])
 
 
 import os
