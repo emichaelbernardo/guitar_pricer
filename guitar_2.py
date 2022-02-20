@@ -16,10 +16,10 @@ import configparser
 
 
 import os
-st.write(
-"Has environment variables been set:",
-os.environ["aws_access"] == st.secrets["aws_access"],
-os.environ["aws_secret"] == st.secrets["aws_secret"])
+#st.write(
+#"Has environment variables been set:",
+#os.environ["aws_access"] == st.secrets["aws_access"],
+#os.environ["aws_secret"] == st.secrets["aws_secret"])
 
 
 # loading the trained model from local drive
