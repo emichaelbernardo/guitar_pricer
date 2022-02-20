@@ -66,13 +66,13 @@ model = pickle.loads(body)
 @st.cache()
   
 # defining the function which will make the prediction using the data which the user inputs 
-#def prediction(type_code,origin_code,cond_score,body_code,price_code):
-def prediction(type_code,origin_code,cond_score,price_code):    
+def prediction(type_code,origin_code,cond_score,body_code,price_code):
+#def prediction(type_code,origin_code,cond_score,price_code):    
  
     # Making predictions 
     prediction = model.predict( 
-        #[[type_code,origin_code,cond_score,body_code,price_code]])
-        [[type_code,origin_code,cond_score,price_code]])
+        [[type_code,origin_code,cond_score,body_code,price_code]])
+        #[[type_code,origin_code,cond_score,price_code]])
      
     return prediction
 
