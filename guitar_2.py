@@ -194,8 +194,8 @@ def main():
     
     # when 'Predict' is clicked, make the prediction and store it 
     if st.button("Appraise my guitar"): 
-        result = prediction(type_code,origin_code,cond_score,price_code)
-        #result = prediction(type_code,origin_code,cond_score,body_code,price_code)
+        #result = prediction(type_code,origin_code,cond_score,price_code)
+        result = prediction(type_code,origin_code,cond_score,body_code,price_code)
         price = "{:.2f}".format(result[0])
         
         #st.write('Guitar value is $',price)
