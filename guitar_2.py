@@ -114,8 +114,8 @@ def main():
     body_types = { 
                 0:'Generic',
                 1:'Offset (Jaguar, Explorer etc.)',
-                2:'Special (Mccarty, Warlock etc.)',
-                3:'SG',
+                2:'PRS type or similar',
+                3:'SG or similar',
                 4:'Stratocaster',
                 5:'Telecaster',
                 6:'Les Paul (LP, ES335 etc.)'
@@ -125,7 +125,7 @@ def main():
     
     body_code = st.selectbox(
     label="Body Style:",
-    options= (4,0,1,2,3,5,0),
+    options= (4,5,6,2,3,1,0),
     format_func=lambda x: body_types.get(x),
         )  
     
@@ -175,15 +175,15 @@ def main():
         format_func=lambda x: conditions.get(x),
         )   
 
-    price_dict = {1: "Not Sure.",
-                  5: "less than 500",
-                  4: "less than 1000",
+    price_dict = {#1: "Not Sure.",
+                  #5: "less than 500",
+                  2: "less than 1000",
                   3: "less than 1500",
-                  2: "less than 2500" }
+                  4: "less than 2500" }
     
     price_code = st.selectbox(
         label="How much was it originally:",
-        options= (5, 4, 3, 2,1), 
+        options= (4, 3, 2), 
         format_func=lambda x: price_dict.get(x),
         )       
     
