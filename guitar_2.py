@@ -125,7 +125,7 @@ def main():
     
     body_code = st.selectbox(
     label="Body Style:",
-    options= (0,1,2,3,4,5,6),
+    options= (4,0,1,2,3,5,0),
     format_func=lambda x: body_types.get(x),
         )  
     
@@ -147,16 +147,16 @@ def main():
 
     origins = { 
         0: "China",
-        1: "Vietnam",
-        2: "Korea / Indonesia",
-        3: "Mexico, Japan",
+        1: "Vietnam or Taiwan",
+        2: "Korea or Indonesia",
+        3: "Mexico or Japan",
         4: "United States"
         
         }   
 
     origin_code = st.selectbox(
         label="Country of origin:",
-        options= (0,1,2,3,4), 
+        options= (4,0,1,2,3), 
         format_func=lambda x: origins.get(x),
         )      
     
