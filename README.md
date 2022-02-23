@@ -49,15 +49,18 @@ The purpose of the project is to create a web application that will use machine 
 | papermill | DeepNote | psycopg2 | Streamlit CLOUD |
 
 </div>
-<div>
-## Algorithm <br>
+
+<br>  
+
+-------------------
+## Algorithm: 
 ----------------------
 - used Sklearn Linear Regression GLS for price prediction based on the following features:
     - body style
     - body type
     - country of origin
     - condition
-    - estimated original proce
+    - estimated original price
     
 - model scores and sample results:    
 <img src="img/modelscores.png" alt="prediction results" width="800"/><br>
@@ -69,40 +72,30 @@ The price predictions are realistic for mode known brands like Fender, Gibson ho
 <img src="img/model_predictions.png" alt="prediction results" width="400"/><br>
 
 </div>    
-    
-<table align='left'>
-        <tr><td style="vertical-align:top">
-Using a Logistic Regression model to predict the 'price' of a used guitar, a web app was built 
-deploy the model.<br>
-            To use the app the user:<br>
-        <ul>
-          <li>selects the body style of the guitar</li>
-           <li>selects the body type of the guitar</li>
-          <li>selects the condition of the guitar</li>
-          <li>selects the origin of the guitar</li>
-          <li>selects the initial estimated original price of the guitar</li>
-          <li>clicks 'predict'</li>
-           <li>will see the estimated value current value of the guitar</li>
-        </ul> 
-              Although the model performance is not optimal yet, the initial pipeline is functional. The user can select features and a prediction is produced based on the model.
-            </td>
-            <td>
-                <img src="img/app.png" alt="drawing" width="500" style="vertical-align:top"/><br>
-            </td>
-      </tr>
-</table>
-</div>    
 
+-------------------
+## Deployment: 
+----------------------
+
+Using the Logistic Regression model to predict the 'price' of a used guitar, Streamlit was used to build the front-end.
+- To use the app the user:
+    - selects the body style of the guitar
+    - selects the body type of the guitar
+    - selects the condition of the guitar
+    - selects the origin of the guitar
+    - selects the initial estimated original price of the guitar
+    - clicks 'Appraise my Guitar'
+    - will see the estimated value current value of the guitar
+
+<img src="img/app.png" alt="drawing" width="500" style="vertical-align:top"><br>
 <br>
 
-<div>
-    <br>
+
     
-## Further Work  
----------------------
-- Tuning of prediction model
-- Improved formatting and styling of the web app
+-------------------
+## Communication: 
+----------------------
+- Here is the [link](https://share.streamlit.io/emichaelbernardo/guitar_pricer/main/guitar_2.py) to the web app
+- Comment or Collaborate ? [Contact me](mailto:emichaelbernardo@gmail.com)
 
-    <br>
 
-</div>
