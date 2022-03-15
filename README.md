@@ -1,7 +1,10 @@
-# Used Guitar Appraiser App using ML
-### METIS Data Engineering Project
+# Creating a Machine Learning enabled Used Guitar Appraiser App 
+
 ----------------------
-submitted by Mike Bernardo
+by Mike Bernardo
+
+
+[![Watch the video](img/title.png)](https://youtu.be/vt5fpE0bzSY)
 
 ## Introduction
 ---------------------
@@ -94,5 +97,6 @@ Using the Logistic Regression model to predict the 'price' of a used guitar, Str
 ----------------------
 - Here is the [link](https://share.streamlit.io/emichaelbernardo/guitar_pricer/main/guitar_2.py) to the web app
 - Comment or Collaborate ? [Contact me](mailto:emichaelbernardo@gmail.com)
+
 
 
