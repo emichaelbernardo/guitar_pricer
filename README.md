@@ -5,15 +5,12 @@ submitted by Mike Bernardo
 
 ## Introduction
 ---------------------
-<style>
-table {float:left}
-</style>
 
 <p>
 According to the Fender New Guitar Player Landscape Analysis survey, over the past 2 years 7% of Americans learned to play guitar- or roughly 16 million people aged 13-64.  With this increase of learners, sales for guitars new and used have also increased. 
 The increase in demand coupled with the decrease in supply of guitars for these new players due to supply chain issues have also contributed to what guitar aficionados are referring to a ‘Guitar bubble’ in the same manner one would speak of the stock or housing market. </p>
 <p>
-The purpose of the project is to create a web application that will use machine learning algorithms to predict the value of a used electric guitar based on user input. 
+The purpose of the project is to create a web application that will use machine learning algorithms to predict the value of a used electric guitar based on user input. This will entail the creation of a fully automated data pipeline that will web scrape data from Reverb.com, build a predictive model using linear regression and make the model available to a Streamlit Cloud web app via a Amazon S3 bucket.
 </p>
 
 ## Design 
